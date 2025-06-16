@@ -4,22 +4,31 @@ A simple yet powerful console-based Billing System developed in C++ using object
 
 ## 🛠️ Features
 
-- **Add & Manage Products**  
-  Admin can create, update, view, and delete products using a user-friendly CLI.
+### 🔐 Admin Module
+- Add new products with product number, name, and rate
+- View all available products
+- Modify existing product rates
+- Delete products from the system
 
-- **Customer Billing Interface**  
-  Customers can:
-  - Select items
-  - Enter quantity
-  - Auto-generate an invoice with total amount and date
+### 🛒 Customer Billing Interface
+- View available products
+- Select products and enter quantity
+- Auto-generate a detailed invoice with:
+  - Item-wise breakdown
+  - Quantity × Rate
+  - Total amount
+  - Date & Time of purchase
 
-- **Invoice Generation**  
-  - Calculates total cost dynamically
-  - Displays item-wise breakdown with quantity and rate
-  - Saves product data using file handling
+### 📄 File Handling
+- All products are stored in a file: `Products.txt`
+- File is read and updated dynamically as per admin actions
 
-- **Object-Oriented Design**  
-  Built using classes like `Product`, `BillItems`, `Invoice`, and `Bill` for modularity and scalability.
+### 👨‍💻 Object-Oriented Design
+The project uses modular class-based architecture:
+- `Product`
+- `Bill`
+- `BillItems`
+- `Invoice`
 
 ## 🧱 Tech Stack
 
